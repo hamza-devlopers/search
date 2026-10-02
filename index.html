@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
+        <a href="page2.html">2nd page</a>
         <img class="Google_Logo" src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
         <div class="box">
             <div class="plusIcon">
                 <button>+</button>
             </div>
             <div class="searchBar">
-                <input type="text" placeholder="Search google" name="GoogleSearch">
+                <form action="https://www.google.com/search">
+                    <input type="text" name="q">
+
             </div>
             <div class="mic">
                 <img src="./images/micIcon.PNG" alt="Mic_Icon">
@@ -23,10 +28,133 @@
                 <img src="./images/GoogleLens.PNG" alt="Mic_Icon">
             </div>
             <div class="AiIcon">
-                <button><img class="SearchIcon" src="./images/SearchBar.PNG" alt="SearchIcon">AI Mode</button>
+                <input type="submit" class="button" value="Google Search">
+                </form>
             </div>
-            
         </div>
-    </div>    
+
+    </div>
+    <page2 class="f:\search_pro\search\page2.html">
+        <div class="container">
+            <div class="images">
+                <img class="Google_Logo" src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
+                <span>images</span>
+            </div>
+            <div class="box_2">
+                <div class="plusIcon">
+                    <button>+</button>
+                </div>
+                <div class="searchBar">
+                    <form action="https://www.google.com/search">
+                    <input type="text" placeholder="Search google" name="GoogleSearch">
+                </div>
+                <div class="mic">
+                    <img src="./images/micIcon.PNG" alt="Mic_Icon">
+                </div>
+                <div class="lens">
+                    <img src="./images/GoogleLens.PNG" alt="Mic_Icon">
+                </div>
+
+            </div>
+            <button type="submit" class="button">Google Search</button>
+        </div>
+        </form>
+    </page2>
+    <div class="AdvancedSearch">
+        <div class="topSide">
+            <img src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
+            <div class="circle">A</div>
+        </div>
+        <div class="line"></div>
+        <h1>Advanced Search</h1>
+        <div class="boxPart">
+            <h3>Find pages with</h3>
+            <form action="https://www.google.com/search">
+            <div class="FirstBox">
+                <span>All of these words: </span>
+                <input type="text" name="q">
+            </div>
+            <div class="FirstBox">
+                <span>This exact word or phrase: </span>
+                <input type="text" name="q">
+            </div>
+            <div class="FirstBox">
+                <span>None of these words: </span>
+                <input type="text" name="q">
+            </div>
+            <div class="FirstBox">
+                <span>Site or domain: </span>
+                <input type="text" name="q">
+            </div>
+        </div>
+        <h1>Then narrow your results by</h1>
+        <div class="boxPart">
+            <h3>Find pages with</h3>
+            <div class="FirstBox">
+                <span>Last update: </span>
+                <select name="Last update" class="input">
+                    <option value="Any time">Any time</option>
+                    <option value="Past hour">Past hour</option>
+                    <option value="Past 24 hours">Past 24 hours</option>
+                    <option value="Past week">Past week</option>
+                    <option value="Past month">Past month</option>
+                    <option value="Past year">Past year</option>
+                </select>
+            </div>
+            <div class="FirstBox">
+                <span>File type: </span>
+                <select name="format" class="input">
+                    <option value="Any format">Any format</option>
+                    <option value="Adobe Acrobat PDF (.pdf)">Adobe Acrobat PDF (.pdf)</option>
+                    <option value="Adobe Postscript (.ps)">Adobe Postscript (.ps)</option>
+                    <option value="Autodesk DWF (.dwf)">Autodesk DWF (.dwf)</option>
+                    <option value="Google Earth KML (.kml)">Google Earth KML (.kml)</option>
+                    <option value="Google Earth KMZ (.kmz)">Google Earth KMZ (.kmz)</option>
+                </select>
+            </div>
+            <div class="FirstBox">
+                <span>Language: </span>
+                <select name="Language" class="input">
+                    <option value="Language">Any language</option>
+                    <option value="Language">Afrikaans</option>
+                    <option value="Language">Arabic</option>
+                    <option value="Language">Armenian</option>
+                    <option value="Language">Belarusian</option>
+                    <option value="Language">Bulgarian</option>
+                    <option value="Language">Catalan</option>
+                    <option value="Language">Chinese (Simplified)</option>
+                    <option value="Language">Chinese (Traditional)</option>
+                    <option value="Language">Croatian</option>
+                    <option value="Language">Czech</option>
+                    <option value="Language">Danish</option>
+                    <option value="Language">Dutch</option>
+                    <option value="Language">English</option>
+                    <option value="Language">Esperanto</option>
+                    <option value="Language">Estonian</option>
+                    <option value="Language">Filipino</option>
+                    <option value="Language">Finnish</option>
+                    <option value="Language">French</option>
+                    <option value="Language">German</option>
+                    <option value="Language">Greek</option>
+                    <option value="Language">Hebrew</option>
+                    <option value="Language">Hindi</option>
+                </select>
+            </div>
+            <div class="FirstBox">
+                <span>Usage rights: </span>
+                <select name="format" class="input">
+                    <option value="UsageRights">Not filtered by licence</option>
+                    <option value="UsageRights">Free of charge to use or share</option>
+                    <option value="UsageRights">Free of charge to use or share, even commercially</option>
+                    <option value="UsageRights">Free of charge to use, share or modify</option>
+                    <option value="UsageRights">Free of charge to use, share or modify, even commercially</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="LastButton">Advanced Search</button>
+    </form>
 </body>
+
 </html>

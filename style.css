@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    color: #474747;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -9,7 +11,8 @@ body {
     width: 100vw;
     height: 100vh;
 }
-.container{
+
+.container {
     width: 100%;
     min-width: 450px;
     height: 100%;
@@ -20,13 +23,16 @@ body {
     align-items: center;
     transform: translateY(-10%);
 }
-.Google_Logo{
+
+.Google_Logo {
     width: 25%;
     max-width: 100%;
     height: auto;
 
 }
-.box{
+
+.box,
+.box_2 {
     width: 60%;
     display: flex;
     align-items: center;
@@ -36,10 +42,16 @@ body {
     background-color: #ffffff;
     gap: 12px;
 }
-.box:hover{
-    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+
+.box_2 {
+    padding: 15px 16px;
 }
-.plusIcon button{
+
+.box:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.plusIcon button {
     border: none;
     background-color: transparent;
     color: #70757a;
@@ -47,28 +59,32 @@ body {
     font-size: 20px;
 }
 
-.searchBar{
+.searchBar {
     flex: 1;
 }
-.searchBar input{
+
+.searchBar input {
     width: 100%;
     border: none;
     outline: none;
     font-size: 16px;
-    background:transparent;
+    background: transparent;
 }
-.searchBar input:action{
+
+.searchBar input:action {
     border: none;
     box-shadow: none;
 }
+
 .mic img,
-.lens img{
+.lens img {
     width: 20px;
     height: 20px;
     cursor: pointer;
     display: block;
 }
-.AiIcon button{
+
+.AiIcon button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,4 +94,139 @@ body {
     pointer-events: none;
     padding: 6px;
     cursor: pointer;
+}
+
+.images {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    align-items: flex-end;
+    width: fit-content;
+}
+
+.images span {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #3186ff;
+
+}
+
+.images img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    padding: 10px;
+    border: none;
+    color: black;
+    background-color: #f8f9fa;
+    font-size: 13px;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+.AdvacedSearch {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.topSide {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+    border-bottom: 0.1px solid #d2d2d2;
+    padding-inline: 8%;
+
+}
+
+.topSide img {
+    width: 9%;
+}
+
+.circle {
+    width: 2%;
+    height: 2%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    background: coral;
+
+}
+
+.line {
+    width: 100%;
+    height: 15%;
+    background-color: gray;
+}
+
+.AdvancedSearch h1 {
+    font-size: 180%;
+    font-weight: 500;
+    padding: 4%;
+    padding-left: 60px;
+}
+
+.boxPart {
+    width: 50%;
+    padding-left: 60px;
+
+}
+
+.boxPart h3 {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.FirstBox {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.FirstBox input,
+.FirstBox .input {
+    height: 44px;
+    width: 360px;
+    padding-left: 4%;
+    outline-color: #0b57d0;
+    font-size: 17px;
+}
+.FirstBox .input{
+    padding: 10px;
+}
+
+.FirstBox input:hover {
+    outline: none;
+}
+
+.FirstBox span {
+    width: 139px;
+    font-size: 15px;
+}
+
+.LastButton {
+    border: none;
+    padding: 1.3% 2%;
+    color: white;
+    background-color: #336ef3;
+    border-radius: 25px;
+    margin: 56px 400px;
+}
+.LastButton:hover{
+    background-color: #1a55db;
+
+}
+.LastButton:active{
+    background-color: #133ea1;
+
 }
