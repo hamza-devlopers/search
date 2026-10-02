@@ -14,6 +14,7 @@ body {
 
 .container {
     width: 100%;
+    position: relative;
     min-width: 450px;
     height: 100%;
     gap: 35px;
@@ -49,6 +50,33 @@ body {
 
 .box:hover {
     box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+.FeelingLucky{
+    border: none;
+    padding: 1.3% 2%;
+    color: white;
+    background-color: #336ef3;
+    border-radius: 25px;
+}
+.FeelingLucky:hover{
+    background-color: #1a55db;
+}
+.FeelingLucky:active{
+    background-color: #133ea1;
+
+}
+
+.page2Link {
+    position: absolute;
+    top: 17%;
+    right: 190px;
+}
+
+.page3Link{
+    position: absolute;
+    top: 17%;
+    right: 47px;
+
 }
 
 .plusIcon button {
@@ -131,7 +159,14 @@ body {
 .AdvacedSearch {
     height: 100%;
     width: 100%;
+    position: relative;
 
+
+}
+
+.threePage {
+    position: absolute;
+    right: 40px;
 
 }
 
@@ -168,6 +203,7 @@ body {
 }
 
 .AdvancedSearch h1 {
+    position: relative;
     font-size: 180%;
     font-weight: 500;
     padding: 4%;
@@ -201,7 +237,8 @@ body {
     outline-color: #0b57d0;
     font-size: 17px;
 }
-.FirstBox .input{
+
+.FirstBox .input {
     padding: 10px;
 }
 
@@ -222,11 +259,13 @@ body {
     border-radius: 25px;
     margin: 56px 400px;
 }
-.LastButton:hover{
+
+.LastButton:hover {
     background-color: #1a55db;
 
 }
-.LastButton:active{
+
+.LastButton:active {
     background-color: #133ea1;
 
 }

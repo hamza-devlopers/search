@@ -9,8 +9,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="page2.html">2nd page</a>
+    <div class="container" id="#page1">
+        <a href="#page2" class="page2Link">image section</a>
+        <a href="#page3" class="page3Link">Advanced section</a>
+
         <img class="Google_Logo" src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
         <div class="box">
             <div class="plusIcon">
@@ -29,38 +31,40 @@
             </div>
             <div class="AiIcon">
                 <input type="submit" class="button" value="Google Search">
-                </form>
+               
             </div>
         </div>
-
+        <button type="submit" name="ablq" class="FeelingLucky">I am Feeling Lucky</button>
+ </form>
     </div>
-    <page2 class="f:\search_pro\search\page2.html">
-        <div class="container">
-            <div class="images">
-                <img class="Google_Logo" src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
-                <span>images</span>
-            </div>
-            <div class="box_2">
-                <div class="plusIcon">
-                    <button>+</button>
-                </div>
-                <div class="searchBar">
-                    <form action="https://www.google.com/search">
-                    <input type="text" placeholder="Search google" name="GoogleSearch">
-                </div>
-                <div class="mic">
-                    <img src="./images/micIcon.PNG" alt="Mic_Icon">
-                </div>
-                <div class="lens">
-                    <img src="./images/GoogleLens.PNG" alt="Mic_Icon">
-                </div>
-
-            </div>
-            <button type="submit" class="button">Google Search</button>
+    <div class="container" id="#page2">
+        <a href="#page1" class="page3Link">Home</a>
+        <div class="images">
+            <img class="Google_Logo" src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
+            <span>images</span>
         </div>
-        </form>
-    </page2>
-    <div class="AdvancedSearch">
+        <div class="box_2">
+            <div class="plusIcon">
+                <button>+</button>
+            </div>
+            <div class="searchBar">
+                <form action="https://www.google.com/search">
+                    <input type="text" placeholder="Search google" name="GoogleSearch">
+            </div>
+            <div class="mic">
+                <img src="./images/micIcon.PNG" alt="Mic_Icon">
+            </div>
+            <div class="lens">
+                <img src="./images/GoogleLens.PNG" alt="Mic_Icon">
+            </div>
+
+        </div>
+        <button type="submit" class="button">Google Search</button>
+    </div>
+    </form>
+    <div class="AdvancedSearch" id="#page3">
+        <a href="#page1" class="threePage">Home</a>
+
         <div class="topSide">
             <img src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
             <div class="circle">A</div>
@@ -70,24 +74,24 @@
         <div class="boxPart">
             <h3>Find pages with</h3>
             <form action="https://www.google.com/search">
-            <div class="FirstBox">
-                <span>All of these words: </span>
-                <input type="text" name="q">
-            </div>
-            <div class="FirstBox">
-                <span>This exact word or phrase: </span>
-                <input type="text" name="q">
-            </div>
-            <div class="FirstBox">
-                <span>None of these words: </span>
-                <input type="text" name="q">
-            </div>
-            <div class="FirstBox">
-                <span>Site or domain: </span>
-                <input type="text" name="q">
-            </div>
+                <div class="FirstBox">
+                    <span>All of these words: </span>
+                    <input type="text" name="q">
+                </div>
+                <div class="FirstBox">
+                    <span>This exact word or phrase: </span>
+                    <input type="text" name="q">
+                </div>
+                <div class="FirstBox">
+                    <span>None of these words: </span>
+                    <input type="text" name="q">
+                </div>
+                <div class="FirstBox">
+                    <span>Site or domain: </span>
+                    <input type="text" name="q">
+                </div>
         </div>
-        <h1>Then narrow your results by</h1>
+        <!-- <h1>Then narrow your results by</h1>
         <div class="boxPart">
             <h3>Find pages with</h3>
             <div class="FirstBox">
@@ -152,9 +156,9 @@
                 </select>
             </div>
         </div>
-    </div>
-    <button type="submit" class="LastButton">Advanced Search</button>
-    </form>
+    </div> -->
+        <button type="submit" class="LastButton">Advanced Search</button>
+        </form>
 </body>
 
 </html>
