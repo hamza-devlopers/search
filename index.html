@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <div class="container" id="#page1">
-        <a href="#images.html" class="page2Link">image section</a>
-        <a href="#advanced.html" class="page3Link">Advanced section</a>
+    <div class="container" id="page1">
+        <a href="#page2" class="page2Link">image section</a>
+        <a href="#page3" class="page3Link">Advanced section</a>
 
         <img class="Google_Logo" src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
         <div class="box">
@@ -19,7 +19,7 @@
                 <button>+</button>
             </div>
             <div class="searchBar">
-                <form action="https://www.google.com/search">
+                <form action="https://www.google.com/search" method="get">
                     <input type="text" name="q">
 
             </div>
@@ -30,15 +30,72 @@
                 <img src="./images/GoogleLens.PNG" alt="Mic_Icon">
             </div>
             <div class="AiIcon">
-                <input type="submit" class="button" value="Google Search">
-               
+                <input type="submit" class="button" name="btnK" value="Google Search">
+
             </div>
         </div>
-        <button type="submit" name="ablq" class="FeelingLucky">I am Feeling Lucky</button>
- </form>
+        <button type="submit" name="btnI" class="FeelingLucky" value="I am FeelingLucky">I am Feeling Lucky</button>
+        </form>
     </div>
-    
-   
+    <div class="container" id="page2">
+        <a href="#page1" class="page3Link">Home</a>
+        <div class="images">
+            <img class="Google_Logo" src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
+            <span>images</span>
+        </div>
+        <div class="box_2">
+            <div class="plusIcon">
+                <button>+</button>
+            </div>
+            <div class="searchBar">
+                <form action="https://www.google.com/search" method="get">
+                    <input type="text" placeholder="Search google" name="q">
+            </div>
+            <input type="hidden" name="tbm" value="isch">
+            <div class="mic">
+                <img src="./images/micIcon.PNG" alt="Mic_Icon">
+            </div>
+            <div class="lens">
+                <img src="./images/GoogleLens.PNG" alt="Mic_Icon">
+            </div>
+
+        </div>
+        <button type="submit" class="button" value="Google Search">Google Search</button>
+    </div>
+    </form>
+    <div class="AdvancedSearch" id="page3">
+        <a href="#page1" class="threePage">Home</a>
+
+        <div class="topSide">
+            <img src="./images/googlelogo_color_272x92dp.png" alt="Google_Logo">
+            <div class="circle">A</div>
+        </div>
+        <div class="line"></div>
+        <h1>Advanced Search</h1>
+        <div class="boxPart">
+            <h3>Find pages with</h3>
+            <form action="https://www.google.com/search" method="get">
+                <div class="FirstBox">
+                    <span>All of these words: </span>
+                    <input type="text" name="as_q">
+                </div>
+                <div class="FirstBox">
+                    <span>This exact word or phrase: </span>
+                    <input type="text" name="as_epq">
+                </div>
+                <div class="FirstBox">
+                    <span>None of these words: </span>
+                    <input type="text" name="as_eq">
+                </div>
+                <div class="FirstBox">
+                    <span>Site or domain: </span>
+                    <input type="text" name="as_sitesearch">
+                </div>
+        </div>
+        <button type="submit" class="LastButton" value="Advanced Search">Advanced Search</button>
+        </form>
+
+
         <!-- <h1>Then narrow your results by</h1>
         <div class="boxPart">
             <h3>Find pages with</h3>
@@ -105,8 +162,7 @@
             </div>
         </div>
     </div> -->
-        <button type="submit" class="LastButton">Advanced Search</button>
-        </form>
+
 </body>
 
 </html>
